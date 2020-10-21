@@ -1,7 +1,130 @@
 extends template/main
 append vars
   -
-    page_title= 'main page'
+    page_title= 'Adrienne Vittadini'
 block content
     main
         .section
+            .bricks
+                .d2
+                    .card-items
+                        span Your Cart:
+                        strong 2 items
+                    a.card-link Save Your Cart
+                .dwi2.card-right
+                    a.card-link Return to Shoping
+            .bricks
+                .d8
+                    .card-block
+                        .card-head
+                            .card-head-left
+                                .card-image
+                                    +img('frames.png')
+                                .card-action
+                                    button.card-action-btn Remove
+                                    button.card-action-btn Edit
+                            .card-head-right
+                                h1.card-head-title Adrienne Vittadini  ($145.90)
+                                h2.card-head-subtitle AV 6002 Eyeglasses
+                                ul.card-head-list
+                                    li.card-head-list-item
+                                        strong.card-head-list-item-title Quantity
+                                        select.card-head-list-item-text
+                                            option 1
+                                    li.card-head-list-item
+                                        strong.card-head-list-item-title Frame:
+                                        span.card-head-list-item-text Black, Small ($104.00)
+                                    li.card-head-list-item
+                                        strong.card-head-list-item-title Prescription:
+                                        span.card-head-list-item-text Single Vision ($34.99)
+                                            a(href='#').card-head-list-item-link Details
+                                    li.card-head-list-item
+                                        strong.card-head-list-item-title Lens Type & Options:
+                                        span.card-head-list-item-text ($12.99)
+                                            a(href='#').card-head-list-item-link Details
+                        .card-body
+                            ul.card-list
+                              li.card-list-item
+                                  .card-list-item-img
+                                      +img('add1.png')
+                                  .card-list-item-desc
+                                      h3 Scratch-Resistant Coating (Free)
+                                      h4 Keep your lenses looking newer, longer.
+                                  .card-list-item-action
+                                      button.card-list-btn Add
+                              li.card-list-item
+                                  .card-list-item-img
+                                      +img('add2.png')
+                                  .card-list-item-desc
+                                      h3 Lens Polish ($4.50)
+                                      h4 Keep your lenses looking newer, longer.
+                                  .card-list-item-action
+                                      button.card-list-btn Add
+                              li.card-list-item
+                                  .card-list-item-img
+                                      +img('add3.png')
+                                  .card-list-item-desc
+                                      h3 Extended Warranty ($29.99)
+                                      h4 Keep your lenses looking newer, longer.
+                                  .card-list-item-action
+                                      button.card-list-btn.active Added
+                    .card-block
+                        .card-offer
+                            .card-offer-img
+                                +img('offer.png')
+                                button.card-action-btn Remove
+                            .card-offer-desc
+                                h3.card-offer-title Maintenance & Cleaning Kit  ($9.95)
+                                h4.card-offer-subtitle Includes a Cleaning Cloth, Solution and Screwdriver Set.
+                                .card-offer-quantity
+                                    strong Quantity
+                                    select
+                                        option 1
+                    h5.card-title Special offers for your cart
+                    .card-block
+                        .card-offer
+                            .card-offer-img
+                                +img('offer.png')
+                                button.card-action-btn Remove
+                            .card-offer-desc
+                                h3.card-offer-title Maintenance & Cleaning Kit  ($9.95)
+                                h4.card-offer-subtitle Includes a Cleaning Cloth, Solution and Screwdriver Set.
+                                .card-offer-quantity
+                                    strong Quantity
+                                    select
+                                        option 1
+                                button.card-btn Add to cart
+                .d4
+                    form.card-promo-form
+                        input(type='text' placeholder='Promo Code / CoolCash').card-promo-form-inpt
+                        button.card-promo-form-btn Apply
+                    .card-total
+                        ul.card-total-list
+                            li.card-total-list-item
+                                strong Subtotal
+                                span $1,870.95
+                            li.card-total-list-item.discount
+                                strong Discount
+                                    | (LENSE10)
+                                    a(href='#')  Remove
+                                span -$98
+                            li.card-total-list-item
+                                strong Shipping & Handling
+                                span $0
+                            li.card-total-list-item.total
+                                strong Grand total:
+                                span $1,870.95
+                        button.card-total-btn.green
+                            span Proceed to Checkout
+                        .card-total-or
+                            | or checkout with
+                        button.card-total-btn.paypal
+                            +img('paypal.png')
+                        button.card-total-btn.amazon
+                            +img('amazon.png')
+                        .card-total-help
+                            h4.card-total-help-title Need Help? Call Us
+                            a.card-total-help-phone 888-293-4755
+                        .card-total-date
+                            strong Mon - Fri 10am - 5pm EST
+                            strong Sat 12 pm - 4pm EST
